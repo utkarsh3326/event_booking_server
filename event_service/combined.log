@@ -10,3 +10,6 @@
 2024-08-20T15:46:27.546Z [info]: Connected to MongoDB
 2024-08-20T15:46:27.559Z [info]: Server running on port 5000
 2024-08-20T15:47:50.721Z [info]: Disconnected from MongoDB
+2024-08-20T15:47:54.280Z [info]: Connected to MongoDB
+2024-08-20T15:47:54.295Z [info]: Server running on port 5001
+2024-08-20T15:48:47.082Z [warn]: Authorization header missing or invalid
