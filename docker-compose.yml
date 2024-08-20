@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  user-service:
+    build: ./user-service
+    ports:
+      - "5001:5000"
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/userdb
+      - ACCESS_TOKEN_SECRET=your_access_token_secret
+    networks:
+      - app-network
+
+  event-service:
+    build: ./event-service
+    ports:
+      - "5002:5000"
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/eventdb
+      - ACCESS_TOKEN_SECRET=your_access_token_secret
+    networks:
+      - app-network
+
+  booking-service:
+    build: ./booking-service
+    ports:
+      - "5003:5000"
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/bookingdb
+      - ACCESS_TOKEN_SECRET=your_access_token_secret
+    networks:
+      - app-network
+
+  notification-service:
+    build: ./notification-service
+    ports:
+      - "5004:5000"
+    environment:
+      - EMAIL_SERVICE_API_KEY=your_email_service_api_key
+    networks:
+      - app-network
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    networks:
+      - app-network
+    volumes:
+      - mongo-data:/data/db
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  mongo-data:

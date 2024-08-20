@@ -1,0 +1,146 @@
+2024-08-18T17:49:00.963Z [info]: Connected to MongoDB
+2024-08-18T17:49:00.983Z [info]: Server running on port 5000
+2024-08-18T17:49:40.081Z [info]: Disconnected from MongoDB
+2024-08-18T18:04:34.614Z [info]: Connected to MongoDB
+2024-08-18T18:04:34.627Z [info]: Server running on port 5000
+2024-08-18T18:06:06.622Z [info]: Disconnected from MongoDB
+2024-08-18T18:06:09.056Z [info]: Connected to MongoDB
+2024-08-18T18:06:09.080Z [info]: Server running on port 5000
+2024-08-18T18:06:57.855Z [info]: Disconnected from MongoDB
+2024-08-18T18:09:49.984Z [info]: Connected to MongoDB
+2024-08-18T18:09:49.997Z [info]: Server running on port 5000
+2024-08-18T18:10:54.698Z [info]: Disconnected from MongoDB
+2024-08-18T18:35:53.279Z [info]: Connected to MongoDB
+2024-08-18T18:36:41.019Z [info]: Connected to MongoDB
+2024-08-18T18:38:00.864Z [info]: Connected to MongoDB
+2024-08-18T18:39:37.151Z [info]: Connected to MongoDB
+2024-08-18T18:39:37.325Z [info]: Server running on port 5000
+2024-08-18T18:40:14.954Z [info]: Disconnected from MongoDB
+2024-08-18T18:40:26.185Z [info]: Connected to MongoDB
+2024-08-18T18:40:26.336Z [info]: Server running on port 5000
+2024-08-18T18:41:03.613Z [info]: Disconnected from MongoDB
+2024-08-18T18:41:53.954Z [info]: Connected to MongoDB
+2024-08-18T18:41:54.080Z [info]: Server running on port 5000
+2024-08-18T18:43:26.907Z [info]: Disconnected from MongoDB
+2024-08-18T18:43:41.023Z [info]: Connected to MongoDB
+2024-08-18T18:43:41.113Z [info]: Server running on port 5000
+2024-08-18T18:59:02.605Z [info]: Disconnected from MongoDB
+2024-08-18T18:59:05.070Z [info]: Connected to MongoDB
+2024-08-18T18:59:05.081Z [info]: Server running on port 5000
+2024-08-18T19:07:52.561Z [warn]: Missing username or password in registration request
+2024-08-18T19:08:03.675Z [info]: User test1 registered successfully
+2024-08-18T19:10:20.900Z [info]: User test1 logged in successfully
+2024-08-18T19:26:19.008Z [info]: User test1 logged in successfully
+2024-08-18T19:26:20.073Z [info]: User test1 logged in successfully
+2024-08-18T19:26:21.011Z [info]: User test1 logged in successfully
+2024-08-18T19:26:22.308Z [info]: User test1 logged in successfully
+2024-08-18T19:26:23.218Z [info]: User test1 logged in successfully
+2024-08-18T19:26:24.156Z [info]: User test1 logged in successfully
+2024-08-18T19:26:25.099Z [info]: User test1 logged in successfully
+2024-08-18T19:26:25.993Z [info]: User test1 logged in successfully
+2024-08-18T19:26:26.903Z [info]: User test1 logged in successfully
+2024-08-18T19:26:27.724Z [info]: User test1 logged in successfully
+2024-08-18T19:26:28.439Z [info]: User test1 logged in successfully
+2024-08-18T19:26:29.344Z [info]: User test1 logged in successfully
+2024-08-18T19:26:29.999Z [info]: User test1 logged in successfully
+2024-08-18T19:26:30.904Z [info]: User test1 logged in successfully
+2024-08-18T19:26:31.825Z [info]: User test1 logged in successfully
+2024-08-18T19:26:32.706Z [info]: User test1 logged in successfully
+2024-08-18T19:26:33.585Z [info]: User test1 logged in successfully
+2024-08-18T19:26:34.477Z [info]: User test1 logged in successfully
+2024-08-18T19:26:35.420Z [info]: User test1 logged in successfully
+2024-08-18T19:26:36.331Z [info]: User test1 logged in successfully
+2024-08-18T19:26:37.161Z [info]: User test1 logged in successfully
+2024-08-18T19:26:38.042Z [info]: User test1 logged in successfully
+2024-08-18T19:26:38.755Z [info]: User test1 logged in successfully
+2024-08-18T19:26:39.561Z [info]: User test1 logged in successfully
+2024-08-18T19:26:40.499Z [info]: User test1 logged in successfully
+2024-08-18T19:26:41.605Z [info]: User test1 logged in successfully
+2024-08-18T19:26:42.923Z [info]: User test1 logged in successfully
+2024-08-18T19:26:43.898Z [info]: User test1 logged in successfully
+2024-08-18T19:26:44.779Z [info]: User test1 logged in successfully
+2024-08-18T19:26:46.074Z [info]: User test1 logged in successfully
+2024-08-18T19:26:46.680Z [info]: User test1 logged in successfully
+2024-08-18T19:26:47.638Z [info]: User test1 logged in successfully
+2024-08-18T19:26:48.590Z [info]: User test1 logged in successfully
+2024-08-18T19:26:49.442Z [info]: User test1 logged in successfully
+2024-08-18T19:26:50.299Z [info]: User test1 logged in successfully
+2024-08-18T19:26:51.197Z [info]: User test1 logged in successfully
+2024-08-18T19:26:52.254Z [info]: User test1 logged in successfully
+2024-08-18T19:26:53.232Z [info]: User test1 logged in successfully
+2024-08-18T19:26:54.197Z [info]: User test1 logged in successfully
+2024-08-18T19:26:54.904Z [info]: User test1 logged in successfully
+2024-08-18T19:26:55.588Z [info]: User test1 logged in successfully
+2024-08-18T19:26:56.314Z [info]: User test1 logged in successfully
+2024-08-18T19:26:56.949Z [info]: User test1 logged in successfully
+2024-08-18T19:26:57.896Z [info]: User test1 logged in successfully
+2024-08-18T19:26:58.552Z [info]: User test1 logged in successfully
+2024-08-18T19:26:59.464Z [info]: User test1 logged in successfully
+2024-08-18T19:27:00.156Z [info]: User test1 logged in successfully
+2024-08-18T19:27:00.827Z [info]: User test1 logged in successfully
+2024-08-18T19:27:01.536Z [info]: User test1 logged in successfully
+2024-08-18T19:27:02.196Z [info]: User test1 logged in successfully
+2024-08-18T19:27:02.821Z [info]: User test1 logged in successfully
+2024-08-18T19:27:03.653Z [info]: User test1 logged in successfully
+2024-08-18T19:27:04.307Z [info]: User test1 logged in successfully
+2024-08-18T19:27:05.023Z [info]: User test1 logged in successfully
+2024-08-18T19:27:05.919Z [info]: User test1 logged in successfully
+2024-08-18T19:27:06.594Z [info]: User test1 logged in successfully
+2024-08-18T19:27:07.478Z [info]: User test1 logged in successfully
+2024-08-18T19:27:08.090Z [info]: User test1 logged in successfully
+2024-08-18T19:27:08.824Z [info]: User test1 logged in successfully
+2024-08-18T19:27:09.472Z [info]: User test1 logged in successfully
+2024-08-18T19:27:10.121Z [info]: User test1 logged in successfully
+2024-08-18T19:27:10.480Z [info]: User test1 logged in successfully
+2024-08-18T19:27:10.830Z [info]: User test1 logged in successfully
+2024-08-18T19:27:11.208Z [info]: User test1 logged in successfully
+2024-08-18T19:27:11.627Z [info]: User test1 logged in successfully
+2024-08-18T19:27:11.978Z [info]: User test1 logged in successfully
+2024-08-18T19:27:12.453Z [info]: User test1 logged in successfully
+2024-08-18T19:27:12.828Z [info]: User test1 logged in successfully
+2024-08-18T19:27:13.225Z [info]: User test1 logged in successfully
+2024-08-18T19:27:13.599Z [info]: User test1 logged in successfully
+2024-08-18T19:27:13.997Z [info]: User test1 logged in successfully
+2024-08-18T19:27:34.937Z [info]: Disconnected from MongoDB
+2024-08-18T19:28:30.831Z [info]: Connected to MongoDB
+2024-08-18T19:28:30.847Z [info]: Server running on port 5000
+2024-08-18T19:28:43.914Z [info]: Disconnected from MongoDB
+2024-08-18T19:28:46.158Z [info]: Connected to MongoDB
+2024-08-18T19:28:46.169Z [info]: Server running on port 5000
+2024-08-18T19:28:48.592Z [warn]: Rate limit exceeded:
+2024-08-18T19:28:49.557Z [warn]: Rate limit exceeded:
+2024-08-18T19:28:52.645Z [warn]: Rate limit exceeded:
+2024-08-18T19:28:58.667Z [info]: Disconnected from MongoDB
+2024-08-18T19:29:55.110Z [info]: Connected to MongoDB
+2024-08-18T19:29:55.136Z [info]: Server running on port 5000
+2024-08-18T19:30:55.033Z [info]: Disconnected from MongoDB
+2024-08-18T19:39:54.009Z [info]: Connected to MongoDB
+2024-08-18T19:39:54.027Z [info]: Server running on port 5000
+2024-08-18T19:39:59.357Z [info]: Disconnected from MongoDB
+2024-08-18T19:40:01.863Z [info]: Connected to MongoDB
+2024-08-18T19:40:01.873Z [info]: Server running on port 5000
+2024-08-18T19:40:22.707Z [info]: Disconnected from MongoDB
+2024-08-18T19:40:25.454Z [info]: Connected to MongoDB
+2024-08-18T19:40:25.470Z [info]: Server running on port 5000
+2024-08-18T19:40:59.960Z [info]: Disconnected from MongoDB
+2024-08-18T19:41:02.500Z [info]: Connected to MongoDB
+2024-08-18T19:41:02.531Z [info]: Server running on port 5000
+2024-08-18T19:41:04.959Z [info]: Disconnected from MongoDB
+2024-08-20T11:16:30.319Z [error]: Error connecting to MongoDB:
+2024-08-20T11:18:15.228Z [error]: Error connecting to MongoDB:
+2024-08-20T11:18:32.719Z [info]: Connected to MongoDB
+2024-08-20T11:18:32.750Z [info]: Server running on port 5000
+2024-08-20T11:18:35.987Z [info]: Disconnected from MongoDB
+2024-08-20T15:47:10.028Z [info]: Connected to MongoDB
+2024-08-20T15:48:05.783Z [info]: Connected to MongoDB
+2024-08-20T15:48:05.793Z [info]: Server running on port 5000
+2024-08-20T15:48:24.599Z [info]: Disconnected from MongoDB
+2024-08-20T15:48:34.237Z [info]: Connected to MongoDB
+2024-08-20T15:48:34.247Z [info]: Server running on port 5000
+2024-08-20T15:48:58.324Z [warn]: Rate limit exceeded:
+2024-08-20T15:49:26.352Z [info]: User test2 registered successfully
+2024-08-20T15:49:35.674Z [warn]: Rate limit exceeded:
+2024-08-20T15:50:43.952Z [warn]: Rate limit exceeded:
+2024-08-20T15:50:46.079Z [info]: Disconnected from MongoDB
+2024-08-20T15:50:54.139Z [error]: Error connecting to MongoDB:
+2024-08-20T15:51:10.229Z [error]: Error connecting to MongoDB:
