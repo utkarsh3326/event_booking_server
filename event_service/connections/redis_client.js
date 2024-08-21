@@ -26,6 +26,9 @@ const connectToRedis = async () => {
             isConnected = false;
         });
 
+        // Wait for the client to connect
+        await redisClient.connect();
+
     } catch (err) {
         logger.error('Error connecting to Redis:', err.message);
         throw err;
