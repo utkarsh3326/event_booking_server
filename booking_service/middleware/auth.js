@@ -16,7 +16,7 @@ const authenticateToken = async (req, res, next) => {
     req.userId = decoded.userId;
     next();
   } catch (err) {
-    logger.error('Token verification failed:', err);
+    logger.error('Token verification failed:', err.message);
     res.sendStatus(403);
   }
 };

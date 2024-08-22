@@ -1,4 +1,5 @@
 const redisClient = require('../connections/redis_client').getClient; // Import Redis client
+const logger = require('../utils/logger');
 
 
 // Cache Middleware
@@ -8,7 +9,7 @@ const cacheMiddleware = async (req, res, next) => {
     if (!id) return next(); // Skip cache for listing all events
 
     try {
-        const cachedEvent = await redisClient.get(`event:${id}`);
+        const cachedEvent = await redisClient().get(`event:${id}`);
         if (cachedEvent) {
             logger.info(`Cache hit for event ${id}`);
             return res.json(JSON.parse(cachedEvent));

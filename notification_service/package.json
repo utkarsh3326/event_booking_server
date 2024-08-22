@@ -8,5 +8,10 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.4",
+    "nodemailer": "^6.9.14",
+    "winston": "^3.14.2"
+  }
 }

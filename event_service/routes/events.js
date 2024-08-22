@@ -21,7 +21,7 @@ router.post('/', authenticateToken, rateLimitMiddleware, async (req, res) => {
         const event = new Event({ name, description, date, location, totalSeats, availableSeats: totalSeats });
         await event.save();
         logger.info(`Event created: ${name}`);
-        redisClient.del('events'); // Invalidate cache for events list
+        redisClient().del('events'); // Invalidate cache for events list
         res.status(201).json(event);
     } catch (err) {
         logger.error('Error creating event:', err.message);
@@ -32,14 +32,14 @@ router.post('/', authenticateToken, rateLimitMiddleware, async (req, res) => {
 // Get all events
 router.get('/', rateLimitMiddleware, async (req, res) => {
     try {
-        const cachedEvents = await redisClient.get('events');
+        const cachedEvents = await redisClient().get('events');
         if (cachedEvents) {
             logger.info('Cache hit for all events');
             return res.json(JSON.parse(cachedEvents));
         }
 
         const events = await Event.find();
-        redisClient.set('events', JSON.stringify(events), 'EX', 60); // Cache for 1 minute
+        redisClient().set('events', JSON.stringify(events), 'EX', 60); // Cache for 1 minute
         logger.info('Cache miss for all events');
         res.json(events);
     } catch (err) {
@@ -58,7 +58,7 @@ router.get('/:id', rateLimitMiddleware, cacheMiddleware, async (req, res) => {
             logger.warn(`Event not found: ${id}`);
             return res.status(404).json({ message: 'Event not found' });
         }
-        redisClient.set(`event:${id}`, JSON.stringify(event), 'EX', 60); // Cache for 1 minute
+        redisClient().set(`event:${id}`, JSON.stringify(event), 'EX', 60); // Cache for 1 minute
         logger.info(`Retrieved event: ${id}`);
         res.json(event);
     } catch (err) {
@@ -86,8 +86,8 @@ router.put('/:id', authenticateToken, rateLimitMiddleware, async (req, res) => {
         if (availableSeats !== undefined) event.availableSeats = availableSeats;
 
         await event.save();
-        redisClient.del('events'); // Invalidate cache for events list
-        redisClient.del(`event:${id}`); // Invalidate cache for individual event
+        redisClient().del('events'); // Invalidate cache for events list
+        redisClient().del(`event:${id}`); // Invalidate cache for individual event
         logger.info(`Event updated: ${id}`);
         res.json(event);
     } catch (err) {
@@ -106,8 +106,8 @@ router.delete('/:id', authenticateToken, rateLimitMiddleware, async (req, res) =
             logger.warn(`Event not found for deletion: ${id}`);
             return res.status(404).json({ message: 'Event not found' });
         }
-        redisClient.del('events'); // Invalidate cache for events list
-        redisClient.del(`event:${id}`); // Invalidate cache for individual event
+        redisClient().del('events'); // Invalidate cache for events list
+        redisClient().del(`event:${id}`); // Invalidate cache for individual event
         logger.info(`Event deleted: ${id}`);
         res.status(204).send();
     } catch (err) {

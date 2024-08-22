@@ -1,7 +1,7 @@
 // rabbitmqClient.js
 const amqp = require('amqplib');
-const { RABBITMQ_URL } = require('./config');
-const logger = require('./utils/logger');
+const { RABBITMQ_URL } = require('../config');
+const logger = require('../utils/logger');
 
 let channel;
 let connection;
@@ -13,7 +13,7 @@ const connectToRabbitMQ = async () => {
     logger.info('Connected to RabbitMQ');
     await channel.assertQueue('email_notifications', { durable: true });
   } catch (err) {
-    logger.error('Error connecting to RabbitMQ:', err.message);
+    logger.error('Error connecting to RabbitMQ:', err);
     throw err;
   }
 };
