@@ -1,0 +1,40 @@
+{
+    "family": "booking-service-task",
+    "networkMode": "awsvpc",
+    "containerDefinitions": [
+        {
+            "name": "booking-service-container",
+            "image": "949237312938.dkr.ecr.ap-south-1.amazonaws.com/booking-service:latest",
+            "memory": 512,
+            "cpu": 256,
+            "portMappings": [
+                {
+                    "containerPort": 5002,
+                    "hostPort": 5002,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "/ecs/booking-service",
+                    "awslogs-region": "ap-south-1",
+                    "awslogs-stream-prefix": "ecs"
+                }
+            }
+        }
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "executionRoleArn": "arn:aws:iam::949237312938:role/ecsTaskExecutionRole",
+    "cpu": "256",
+    "memory": "512",
+    "tags": [
+        {
+            "key": "Name",
+            "value": "booking-service-task"
+        }
+    ]
+}

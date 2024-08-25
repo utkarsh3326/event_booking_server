@@ -1,0 +1,34 @@
+{
+    "family": "notification-service-task",
+    "networkMode": "awsvpc",
+    "containerDefinitions": [
+        {
+            "name": "notification-service-container",
+            "image": "949237312938.dkr.ecr.ap-south-1.amazonaws.com/notification-service:latest",
+            "memory": 512,
+            "cpu": 256,
+            "portMappings": [],
+            "essential": true,
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "/ecs/notification-service",
+                    "awslogs-region": "ap-south-1",
+                    "awslogs-stream-prefix": "ecs"
+                }
+            }
+        }
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "executionRoleArn": "arn:aws:iam::949237312938:role/ecsTaskExecutionRole",
+    "cpu": "256",
+    "memory": "512",
+    "tags": [
+        {
+            "key": "Name",
+            "value": "notification-service-task"
+        }
+    ]
+}

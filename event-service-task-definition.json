@@ -1,0 +1,50 @@
+{
+    "family": "event-service-task",
+    "networkMode": "awsvpc",
+    "containerDefinitions": [
+        {
+            "name": "event-service-container",
+            "image": "949237312938.dkr.ecr.ap-south-1.amazonaws.com/event-service:latest",
+            "memory": 512,
+            "cpu": 256,
+            "environment": [
+                {
+                    "name": "ENV_VAR_NAME",
+                    "value": "your-value"
+                },
+                {
+                    "name": "ANOTHER_ENV_VAR",
+                    "value": "another-value"
+                }
+            ],
+            "portMappings": [
+                {
+                    "containerPort": 5001,
+                    "hostPort": 5001,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "/ecs/event-service",
+                    "awslogs-region": "ap-south-1",
+                    "awslogs-stream-prefix": "ecs"
+                }
+            }
+        }
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "executionRoleArn": "arn:aws:iam::949237312938:role/ecsTaskExecutionRole",
+    "cpu": "256",
+    "memory": "512",
+    "tags": [
+        {
+            "key": "Name",
+            "value": "event-service-task"
+        }
+    ]
+}
